@@ -2,7 +2,7 @@
 name = "api-comunidade-iv"
 version = "0.0.1"
 description = ""
-authors = ["Hylan Silva <hylansilva@outlook.com>"]
+authors = ["Hylan Silva <hylansilva@outlook.com>"] # dê uma linha de espaço e escreva seu nome
 license = "MIT"
 readme = "README.md"
 
