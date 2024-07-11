@@ -1,10 +1,12 @@
 from uuid import uuid4
 from django.db import models
 
+from accounts.models import User
+
 
 class Post(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    post_author = models.CharField(max_length=50, null=False, blank=False)
+    post_author = models.ForeignKey(User, related_name='posts', on_delete=models.CASCADE)
     post_content = models.TextField()
     post_title = models.CharField(max_length=100)
     post_resume = models.TextField()
@@ -21,7 +23,7 @@ class Comment(models.Model):
     comment_post_id = models.ForeignKey(
         Post, related_name="comments", on_delete=models.CASCADE
     )
-    comment_author = models.CharField(max_length=50, null=False, blank=False)
+    comment_author = models.ForeignKey(User, related_name='comments', on_delete=models.CASCADE)
     comment_content = models.TextField()
     comment_likes = models.PositiveIntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
