@@ -1,6 +1,11 @@
 
 # API da Comunidade IV
 
+
+**Inscrições para Mantenedores do Projeto estão abertas**
+
+## [Basta Clickar Aqui](https://forms.gle/TREQ9tpnvDwfkqFD7)
+
 Bem-vindo à API da Comunidade IV! Este é um projeto de backend desenvolvido com Django e Django REST Framework (DRF), que visa integrar os serviços de fórum e blog da Comunidade IV. Este projeto é totalmente open-source e aberto para contribuições de qualquer pessoa que tenha conhecimento básico de desenvolvimento em Python.
 
 ## Índice
