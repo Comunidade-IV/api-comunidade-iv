@@ -39,7 +39,7 @@ A API da Comunidade IV foi criada para fornecer uma plataforma robusta e escalá
 
 ### Pré-requisitos
 
-- Python 3.8 ou superior
+- Python 3.10 ou superior
 - [Poetry](https://python-poetry.org/) para gerenciamento de dependências
 
 ### Instalação
@@ -56,6 +56,8 @@ A API da Comunidade IV foi criada para fornecer uma plataforma robusta e escalá
     ```bash
     poetry install
     ```
+
+   O `poetry.lock` fixa as versões atualizadas de Django, Django REST Framework e sqlparse. Ao atualizar dependências, regenere e inclua o lockfile no mesmo commit para manter as correções de segurança reproduzíveis.
 
 3. Ative o ambiente virtual do Poetry:
 
